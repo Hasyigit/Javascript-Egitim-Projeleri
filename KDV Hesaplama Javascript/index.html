@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KDV Hesaplama</title>
+<style>
+.hesap {
+  background-color: aliceblue;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body {
+  background-color: rgb(156, 184, 184);
+}
+</style>
+</head>
+ 
+<body>
+  <main class="hesap">
+	<h2>KDV Hesaplama</h2>
+	<input placeholder="Fiyatı Girin" type="text" id="txtFiyat">
+	<input placeholder="KDV Oranı Giriniz" type="text" id="txtKdv">
+	<button id="btn">HESAPLA</button>
+	<div id="sonuc"></div>
+ </main>
+	
+	<script>
+		function Hesapla()
+		{
+			var fiyat=Number(document.getElementById("txtFiyat").value);
+			var kdv=Number(document.getElementById("txtKdv").value);
+			var toplamTutar=fiyat+(fiyat*kdv/100);
+			
+			document.getElementById("sonuc").innerHTML="KDV Dahil Fiyat : "+toplamTutar;
+		}
+		
+		var hesapBtn=document.getElementById("btn");
+		hesapBtn.onclick=Hesapla;
+		
+	</script>
+	
+</body>
+</html>
