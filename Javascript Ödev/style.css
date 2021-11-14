@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: rgb(71, 66, 66);
+}
+.textcenter {
+    
+}
+
+h1{
+    color: indianred;
+}
+
+h2{
+    color: indianred;
+}
+
+text2 {
+    color: indianred;
+}
+
+p {
+    color: indianred;
+}
+
+.clock {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+  }
