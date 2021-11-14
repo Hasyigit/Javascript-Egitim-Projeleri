@@ -1,4 +1,4 @@
 
-<img src="https://imgflip.com/gif/5u5f1c" />
+<img src="https://github.com/Hasyigit/Javascript-Egitim-Projeleri/blob/main/Javascript%20%C3%96dev/Web.gif?raw=true" />
 
-https://imgflip.com/gif/5u5f1c
+
