@@ -1,0 +1,89 @@
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.ana {
+    background: #262626;
+    padding: 20px;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    width:300px;
+    height:400px;
+    position:relative;
+}
+
+.ana input {
+    border:none;
+    background: none;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    margin:20px;
+    color:rgb(204, 177, 177);
+    height:30px;
+    width:70%;
+    border-radius: 40px;
+    transition: 0.2s ease-in;
+}
+
+button {
+    margin: 10px;
+    background-color: black;
+    color: rgba(253, 253, 253, 0.404);
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 5%;
+    border: 2px solid #4c6baf;
+}
+
+  .ana input[type="text"], .ana input[type="password"]{
+    border:solid 2px #1B9CFC
+    
+}
+
+.ana button[type="button"]{
+    border:solid 2px #55E6C1;
+    box-sizing: border-box;
+    height:50px;
+    width:40%;
+    cursor: pointer;
+    
+}
+
+
+.ana input[type="text"]:focus, .ana input[type="password"]:focus{
+    width:80%;
+    border:solid 2px #55E6C1;
+    
+}
+
+.ana button[type="button"]:hover{
+    background: #55E6C1;
+    color:#182C61;
+    transition: 0.8s;
+    width: 30%;
+}
+
+.ana h1 {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ana p {
+    color: white
+    
+}
