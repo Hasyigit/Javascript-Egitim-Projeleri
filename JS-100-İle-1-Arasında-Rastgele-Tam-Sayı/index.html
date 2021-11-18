@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Rastgele Tam Sayı Olustur" onclick="myFunction()">
+    <p id="randnum"></p>
+    <script>
+        //Math.random() function(fonksiyonuyla) rastgele bir sayı oluşturabilirim.
+        // Örnek 1 Rastgele bir sayı oluşturdum.
+        const a = Math.random();
+        console.log(a);
+
+        // Örnek 2   1 ile 10 arasında rastgele bir sayı almak
+        const b = Math.random() * (10-1) +1
+        console.log(`1 ile 10 arasında rastgele değer ${b}`)
+
+        //Rastgele bir tamsayı değeri elde etmek için Math.floor()'u kullanabilirsiniz. Math.floor(), değeri en yakın tamsayı değerine düşürerek sayıyı döndürür.
+        // Örnek 3  1 ile 10 arasında rastgele bir tam sayı
+        const c = Math.floor(Math.random() * (10-1)) +1
+        console.log(`1 ile 10 arasında rastgele tamsayı ${c}`)
+
+        function myFunction() {
+        var x = document.getElementById("randnum")
+        x.innerHTML = Math.floor((Math.random() * 100) + 1);
+}
+    </script>
+</body>
+</html>
