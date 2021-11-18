@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #sonuc {
+            padding-top: 10px;
+            color: red;
+        }
+
+        .buton {
+            
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;  
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="s1" name="Bir rakam giriniz.">
+        <input type="text" id="s2" name="Bir rakam giriniz.">
+        <div class="buton">
+            <button type="button" id="btn">Topla</button>
+            <button type="button" id="btn-">Çıkarma</button>
+            <button type="button" id="btn1">Çarp</button>
+            <button type="button" id="btn2">Böl</button>
+        </div>
+            <div id="sonuc"></div>
+    
+    </form>
+    <script>
+      let s1 = document.getElementById("s1");
+      let s2 = document.getElementById("s2");
+      let btn = document.getElementById("btn");
+      let btn1 = document.getElementById("btn1");
+      let btn2 = document.getElementById("btn2");
+      let btnEksi = document.getElementById("btn-");
+      let sonuc = document.getElementById("sonuc");
+
+      btn.onclick=function () {
+        let toplam = Number(s1.value) + Number(s2.value);
+        sonuc.innerHTML = toplam;
+      }
+
+      btn1.onclick=function() {
+          let toplam1 = Number(s1.value) * Number(s2.value);
+          sonuc.innerHTML = toplam1
+      }
+      btn2.onclick=function() {
+          let toplam2 = Number(s1.value) / Number(s2.value);
+          sonuc.innerHTML = toplam2
+      }
+      
+      btnEksi.onclick=function(){
+          let toplam3 = Number(s1.value) - Number(s2.value);
+          sonuc.innerHTML = toplam3
+      }
+    </script>
+</body>
+</html>
