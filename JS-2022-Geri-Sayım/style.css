@@ -1,0 +1,59 @@
+.container {
+    text-align: center;
+    border: 1px;
+}
+
+img {
+    width: 200px;
+    height: 500px;
+}
+
+#timer {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#timer-gunler {
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    padding: 20px;
+    border: solid black;
+    margin: 20px;
+}
+
+#timer-saatler{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    padding: 20px;
+    border: solid black;
+    margin: 20px;
+}
+
+#timer-dakikalar {
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    padding: 20px;
+    border: solid black;
+    margin: 20px;
+}
+
+#timer-saniyeler {
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    padding: 20px;
+    border: solid black;
+    margin: 20px;
+}
