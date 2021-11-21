@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+
+        }
+        #button-start {
+            font-size: 25px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            border-radius: 12px;
+            border: 2px solid black
+        }
+        #button-stop {
+            font-size: 25px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            border-radius: 12px;
+            border: 2px solid black
+        }
+        #button-reset {
+            font-size: 25px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            border-radius: 12px;
+            border: 2px solid black
+        }
+        button{
+            transition-duration: 0.4s;
+            margin: 7px;
+
+        }
+        #button-start:hover {
+        background-color: #9293e4;
+        width: 150px;
+        border: none;
+        }
+        #button-stop:hover {
+        background-color: #9293e4;
+        width: 150px;
+        border: none;
+        }
+        #button-reset:hover {
+        background-color: #9293e4;
+        width: 150px;
+        border: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        p {
+            padding-top: 25px;
+            color: white;
+            font-size: 35px;
+        }
+        
+        section {
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        section span {
+            border-style: solid;
+            border-color: black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zamanlayıcı</h1>
+    <section class="wrapper">
+        <p><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span></p>
+        <button id="button-start">Başlat</button>
+        <button id="button-stop">Durdur</button>
+        <button id="button-reset">Sıfırla</button>
+    </section>
+
+    <script>
+    window.onload = function () {
+        let seconds = 00;
+        let tens = 00;
+        let minutes = 00;
+        let appendTens = document.getElementById("tens");
+        let appendSeconds = document.getElementById("seconds");
+        let appendMinutes = document.getElementById("minutes");
+        let buttonStart = document.getElementById("button-start");
+        let buttonStop = document.getElementById("button-stop");
+        let buttonReset = document.getElementById("button-reset");
+        let Interval
+
+        buttonStart.onclick = function() {
+    
+    clearInterval(Interval);
+     Interval = setInterval(startTimer, 10);
+  }
+  
+    buttonStop.onclick = function() {
+       clearInterval(Interval);
+  }
+  
+
+  buttonReset.onclick = function() {
+     clearInterval(Interval);
+    //tens = "00";
+  	//seconds = "00";
+    //minutes = "00";
+
+    var tens = (duration / 3600);
+    var seconds = ((duration % 3600) / 60);
+    var minutes = duration % 60;
+
+    appendTens.innerHTML = tens;
+  	appendSeconds.innerHTML = seconds;
+    appendMinutes.innerHTML = minutes;
+  }
+  
+   
+  
+  function startTimer () {
+    tens++; 
+    
+    if(tens <= 9){
+      appendTens.innerHTML = "0" + tens;
+    }
+    
+    if (tens > 9){
+      appendTens.innerHTML = tens;
+      
+    } 
+    
+    if (tens > 99) {
+      console.log("seconds");
+      seconds++;
+      appendSeconds.innerHTML = "0" + seconds;
+      tens = 0;
+      appendTens.innerHTML = "0" + 0;
+    }
+    
+    if (seconds > 9 ){
+      appendSeconds.innerHTML = seconds;
+    }
+
+    if (seconds == 60) {
+      minutes = minutes + 1;
+      appendMinutes.innerHTML = minutes;
+      seconds = 0;
+
+  
+  }
+  
+
+}
+}
+  
+    
+    </script>
+
+</body>
+</html>
