@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    margin: auto 0;
+    padding: 0;
+    margin-left:10rem;
+    margin-right:10rem;
+}
+
+.bg-dark {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    border-radius: 50%;
+    
+}
+
+.fa-adjust {
+    font-size: 1.5rem;
+    
+   
+}
