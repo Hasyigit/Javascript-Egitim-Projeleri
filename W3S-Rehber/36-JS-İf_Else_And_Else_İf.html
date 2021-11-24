@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <p id="demo"></p>
+    <h2>JavaScript if else and else if</h2>
+    <h5>Koşullu ifadeler, farklı koşullara dayalı olarak farklı eylemler gerçekleştirmek için kullanılır</h5>
+    <script>
+        // Conditional Statements - Koşullu İfadeler
+        // Belirtilen bir koşul doğruysa yürütülecek bir kod bloğu belirtmek için if kullanın
+        // Aynı koşul yanlışsa, yürütülecek kod bloğunu belirtmek için else kullanın.
+        // İlk koşul yanlışsa, test edilecek yeni bir koşul belirtmek için else if öğesini kullanın.
+        // Yürütülecek birçok alternatif kod bloğu belirtmek için anahtarı kullanın
+
+        // The if Statement
+        // Bir koşul doğruysa yürütülecek JavaScript kodu bloğunu belirtmek için if ifadesini kullanın.
+        if (new Date().getHours() < 22) {
+        document.getElementById("demo").innerHTML = "Good day!";
+
+        }
+
+        // The else Statement
+        // Koşul yanlışsa yürütülecek kod bloğunu belirtmek için else ifadesini kullanın.
+        if (hour < 18) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+
+
+        // The else if Statement
+        // İlk koşul yanlışsa, yeni bir koşul belirtmek için else if ifadesini kullanın.
+        if (time < 10) {
+        greeting = "Good morning";
+        } else if (time < 20) {
+        greeting = "Good day";
+        } else {
+        greeting = "Good evening";
+        }
+    </script>
+</body>
+</html>

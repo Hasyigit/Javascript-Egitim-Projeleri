@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dizi Sıralama</h1>
+    <p id="Normal"></p>
+    <p id="Alfabetik"></p>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+    <p id="demo"></p>
+    <script>
+        // sort() yöntemi, bir diziyi alfabetik olarak sıralar.
+        // Example
+        const fruits = ["Kiraz","Muz","Elma","Armut","Vişne"];
+        document.getElementById("Normal").innerHTML = fruits; // yazdığımız şekilde sıralar
+        fruits.sort();
+        document.getElementById("Alfabetik").innerHTML = fruits; // alfabetik sıralama yapar
+
+
+        // Reversing an Array - Diziyi Ters çevirme
+        // reverse() yöntemi, bir dizideki öğeleri tersine çevirir.
+        const meyve = ["Banana", "Orange", "Apple", "Mango"];
+        meyve.sort();
+        meyve.reverse();
+        // Orange,Mango,Banana,Apple diye çıktı verecektir.
+
+
+        // Numeric Sort - Sayısal Sıralama
+        const points = [40, 100, 1, 5, 25, 10];
+        points.sort(function(a, b){return a - b});
+        console.log(points);
+
+        // Örnek Uygulama
+        const puan = [50,100,1000,300,6,7];
+        document.getElementById("demo").innerHTML = puan;
+
+        function myFunction1() {
+            puan.sort();
+            document.getElementById("demo").innerHTML = puan; //alfabetik sıralama yapar
+        }
+
+        const sayi = [1,10,6,2,100,59,22,21,33];
+        function myFunction2() {
+
+            sayi.sort(function(a, b){
+                return a - b
+            });
+            document.getElementById("demo").innerHTML = sayi; // 1den başlayarak sıralar
+
+        }
+
+    
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // JavaScript Switch Statement
+        // Switch ifadesi, farklı koşullara göre farklı eylemler gerçekleştirmek için kullanılır.
+        // Yürütülecek birçok kod bloğundan birini seçmek için switch ifadesini kullanın.
+        switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+        }
+        // Bu nasıl çalışır?
+        // İfadenin değeri, her bir durumun değerleri ile karşılaştırılır.
+        // Bir eşleşme varsa, ilgili kod bloğu yürütülür.
+        // Eşleşme yoksa, varsayılan kod bloğu yürütülür.
+
+        //Example
+        // getDay() yöntemi, haftanın gününü 0 ile 6 arasında bir sayı olarak döndürür.
+        switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<!--
+ innerHTML. kullanarak bir HTML öğesine yazma 
+ document.write(). kullanarak HTML çıktısına yazma 
+ window.alert(). kullanarak bir uyarı kutusuna yazma 
+ console.log(). kullanarak tarayıcı konsoluna yazma 
+-->
+    <p id="demo">Deneme</p>
+
+    <!-- window.print() kullanımı -->
+    <button onclick="window.print()">Print this page</button>
+    
+<script>
+    // innerHTML kullanımı
+    document.getElementById("demo").innerHTML = "İnnerHTML ile html'da ki içeriği değiştirmemize olanak sağlar."
+
+    // window alert kullanımı
+    window.alert("Ekrana Mesaj Uyarısı Verir")
+
+</script>
+</body>
+</html>

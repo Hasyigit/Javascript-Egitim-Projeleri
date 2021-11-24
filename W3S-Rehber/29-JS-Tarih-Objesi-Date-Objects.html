@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Date Objects</h1>
+    <p id="demo"></p>
+    <p id="tarihp"></p>
+    <script>
+        // JavaScript Date Object, tarihlerle çalışmamıza izin verir
+        // Example
+
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+
+
+        // Creating Date Objects
+        // Date nesneleri, new Date() yapıcısıyla oluşturulur.
+
+        /* new Date()
+        new Date(year, month, day, hours, minutes, seconds, milliseconds)
+        new Date(milliseconds)
+        new Date(date string) */
+
+        const tarih = new Date (2018,11,24,10,33,30)
+        document.getElementById("tarihp").innerHTML = tarih;
+
+        /* NOT 
+        Not: JavaScript, 0 ile 11 arasındaki ayları sayar
+        Ocak = 0
+        aralık = 11 */
+
+        // Example - Sadece Yıl ve Ay
+        const yılAy = new Date(2018,11);
+        console.log(yılAy);
+
+    </script>
+</body>
+</html>

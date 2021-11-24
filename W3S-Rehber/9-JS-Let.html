@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bu keyword ile, daha önce let ile tanımladığımız değişken tekrar tanımlanamaz yani let keywordü ile tanımlanan değişkenler aynı isimle sadece bir defa tanımlanabilir.
+        let sayi = 10;
+        console.log(sayi); // Konsola 10 yazar
+
+        let sayi = 20;
+        sayi = 30;
+        console.log(sayi); // konsola 30 yazar
+
+        let sayi = 10;
+        // let sayi = 20; // Tekrar tanımlanamaz
+        console.log(sayi);
+        //Hata verir : "Uncaught SyntaxError: Identifier 'sayi' has already been declared"
+        
+    </script>
+</body>
+</html>

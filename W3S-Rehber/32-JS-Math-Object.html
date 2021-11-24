@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Matematik Nesnesi</h1>
+    <h5>JavaScript Math nesnesi, sayılar üzerinde matematiksel görevler gerçekleştirmenizi sağlar</h5>
+    <p id="PI"></p>
+    <p id="round"></p>
+    <p id="floor"></p>
+    <script>
+        //Example Pİ Sayısını Yazdırma
+        Math.PI;
+        document.getElementById("PI").innerHTML = Math.PI;
+
+        // Math Properties (Constants) Matematik Özellikleri (Sabitler)
+        // Herhangi bir Math özelliğinin sözdizimi şöyledir: Math.property
+        // JavaScript, Matematik özellikleri olarak erişilebilen 8 matematiksel sabit sağlar
+
+        Math.E        // returns Euler's number
+        Math.PI       // returns PI
+        Math.SQRT2    // returns the square root of 2
+        Math.SQRT1_2  // returns the square root of 1/2
+        Math.LN2      // returns the natural logarithm of 2
+        Math.LN10     // returns the natural logarithm of 10
+        Math.LOG2E    // returns base 2 logarithm of E
+        Math.LOG10E   // returns base 10 logarithm of E
+
+        // Math Methods - Matematik Yöntemleri
+        // Math'ın herhangi bir yönteminin sözdizimi şöyledir: Math.method(sayı)
+
+
+        // Number to Integer - Sayıdan Tamsayıya
+        // Bir sayıyı tam sayıya yuvarlamanın 4 yaygın yöntemi vardır:
+        // Math.round(x) // X'i en yakın tamsayıya yuvarlar
+        // Math.ceil(x) // ondalıklı sayıyı kendisinden sonraki ilk tam sayıya yuvarlar.(yukarı yuvarlar)
+        // Math.floor(x) // ondalıklı sayıyının ondalıklı kısmını kaldırır.(aşağı yuvarlar)
+        // Math.trunc(x) // x'in tamsayı kısmını döndürür (ES6'da yeni)
+        // Example
+
+        // Math.round(4.6);
+        document.getElementById("round").innerHTML = Math.round(4.6); //5'e Yuvarlar
+
+        // Math.floor() kullanımı
+        document.getElementById("floor").innerHTML = Math.floor(4.7); // En yakın bir alt tam sayıya yuvarlar (4)
+        
+    </script>
+</body>
+</html>

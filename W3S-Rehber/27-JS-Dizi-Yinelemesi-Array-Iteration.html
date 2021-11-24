@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>Dizi yineleme yöntemleri, her dizi öğesinde çalışır.</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        // The Array forEach() Method 
+        // forEach() yöntemi, her dizi öğesi için bir işlevi (bir geri çağırma işlevi) çağırır.
+        // Example
+
+        const numbers = [45,22,1,5,7,21];
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+        function myFunction(value, index, array){
+            txt += value + "<br>";
+        }
+
+        // The Array map() Method
+        // map() yöntemi, her dizi öğesinde bir işlev gerçekleştirerek yeni bir dizi oluşturur.
+        // map() yöntemi, değerleri olmayan dizi öğeleri için işlevi yürütmez.
+        // map() yöntemi orijinal diziyi değiştirmez.
+
+        // Example
+        // Bu örnek, her dizi değerini 2 ile çarpar:
+        const numbers1 = [45,4,3,16,25,33,22];
+        const numbers2 = numbers1.map(denemeFunction);
+        document.getElementById("demo1").innerHTML = numbers2;
+        function denemeFunction(value, index, array) {
+            return value * 2;
+        }
+
+
+        // The Array filter() Method
+        // filter() yöntemi, bir testi geçen dizi öğeleriyle yeni bir dizi oluşturur.
+        // Bu örnek, değeri 18'den büyük olan öğelerden yeni bir dizi oluşturur:
+        const numbers = [45, 4, 9, 16, 25];
+        const over18 = numbers.filter(myFunction);
+
+        document.getElementById("demo").innerHTML = over18;
+
+        function myFunction(value, index, array) {
+        return value > 18;
+        }
+
+        // The Array reduce() Method
+        // Reduce() yöntemi, tek bir değer üretmek (azaltmak) için her dizi öğesinde bir işlev çalıştırır.
+        // Bu örnek, bir dizideki tüm sayıların toplamını bulur:
+        const numbers = [45, 4, 9, 16, 25];
+        let sum = numbers.reduce(myFunction);
+
+        function myFunction(total, value, index, array) {
+        return total + value;
+        }
+
+        // The Array includes() Method
+        // ECMAScript 2016, Array.includes()'i dizilere tanıttı. Bu, bir dizide bir öğenin olup olmadığını kontrol etmemizi sağlar (indexOf'un aksine NaN dahil).
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        fruits.includes("Mango"); // is true
+    </script>
+</body>
+</html>

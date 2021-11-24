@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Javascript Fonksiyonu belirli bir görevi gerçekleştirmek için tasarlanmış bir kod bloğudur.
+        // JavaScript ile yazılmış bir fonksiyon çalıştırıldığında (çağrıldığında) işlem yapar.
+        function Topla(sayi1, sayi2) {
+            return sayi1 + sayi2; // sayi1 ve sayi2 toplamını döndürür
+        }
+          alert(Topla(10, 5));
+        //JavaScipt fonksiyon kodları return anahtar kelimesine geldiğinde çalışmayı durdurur.
+        //JavaScript fonksiyonun çağrıldığı yerden devam eder varsa kalan kodları işler.
+        //Fonksiyonlar return anahtar kelimesi ile değer döndürür.
+       
+        /* let sonuc;
+        function Topla(sayi1, sayi2){
+            return sayi1 + sayi2;
+        } */
+
+        // Örnek Fonksiyon 
+        function myFunction(p1, p2){
+            return p1 * p2; //İşlev, p1 ve p2'nin ürününü döndürür
+        }
+        document.getElementById("demo").innerHTML = myFunction(5, 3);
+
+        // Örnek Fonksiyon 2
+        function deneme() {
+            alert("Merhaba")
+        }
+        deneme(); //artık fonksiyona atadığımız değer ile kolayca çağırabiliriz.
+
+        let userName = "yigit";
+        function useraccount () {
+            let mesaj = "Merhaba" + userName;
+            alert(mesaj);
+        }
+        useraccount();
+    </script>
+</body>
+</html>

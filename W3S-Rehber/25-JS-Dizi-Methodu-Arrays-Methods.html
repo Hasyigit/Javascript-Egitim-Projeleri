@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <h1>Dizileri Dizelere Dönüştürme</h1>
+    <h2>toString(), bir diziyi (virgülle ayrılmış) dizi değerleri dizisine dönüştürür.</h2>
+    <script>
+        //Example
+        const fruits = ["Muz", "Kiraz", "Vişne"];
+        document.getElementById("demo").innerHTML = fruits.toString();
+        document.getElementById("demo2").innerHTML = fruits
+
+        //Join() yöntemi ayrıca tüm dizi öğelerini bir dizgede birleştirir.
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.join(" * ");
+        // result
+        // Banana * Orange * Apple * Mango
+
+        // Popping
+        // pop() yöntemi, bir dizideki son öğeyi kaldırır
+        document.getElementById("demo1").innerHTML = fruits; //Banana,Orange,Apple,Mango
+        fruits.pop(); 
+        document.getElementById("demo2").innerHTML = fruits; //Banana,Orange,Apple
+
+
+        // Pushing
+        // push() yöntemi, bir diziye yeni bir öğe ekler (sonda)
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.push("Kiwi");
+
+        // Shifting Elements
+        // shift() yöntemi, ilk dizi öğesini kaldırır ve diğer tüm öğeleri daha düşük bir dizine "kaydırır".
+
+
+        // Splicing an Array
+        // Bir diziye yeni öğeler eklemek için splice() yöntemi kullanılabilir
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+        // Merging (Concatenating) Arrays
+        // concat() yöntemi, mevcut dizileri birleştirerek (birleştirerek) yeni bir dizi oluşturur:
+        const araba = ["Fiat", "Toyota"];
+        const model = ["Punto", "Corolla"];
+        const Arabalarım = araba.concat(model);
+        // çıktısı Fiat, Toyota, Punto, Corolla olcaktır.
+        
+    </script>
+</body>
+</html>

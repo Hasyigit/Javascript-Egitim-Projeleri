@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p id="random"></p>
+    <p id="tamsayi"></p>
+    <p id="sonuc"></p>
+    <button 
+        onclick="document.getElementById('sonuc').innerHTML = getRndInteger(0,10)">
+        Click Me
+    </button>    
+    <script>
+        // Math.random()
+        /* Math.Random(): 0-1 arasında rasgele sayı üretmek için kullanılır.
+         Math.Random() Fonksiyonunun kullanımını */ 
+
+        document.getElementById("random").innerHTML = Math.random(); //Ekrana rastgele sayı yazdırma işlemi uyguladık.
+
+        // JavaScript Random Integers
+        // Math.floor() ile birlikte kullanılan Math.random(), rastgele tamsayıları döndürmek için kullanılabilir.
+        // Örnek // 0 ile 9 arasında rastgele bir tamsayı döndürür:
+
+        document.getElementById("tamsayi").innerHTML = Math.floor(Math.random() * 10); 
+         
+        // Returns a random integer from 0 to 99:
+        Math.floor(Math.random() * 100);
+
+
+        // Örnek Fonksiyon
+        function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+        }   //getRndInteger ile butona tanımladığımız değişken ile fonksiyon atadık
+    </script>
+</body>
+</html>

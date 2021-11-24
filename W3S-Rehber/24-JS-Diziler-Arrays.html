@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //Dizi, birden fazla değer tutabilen özel bir değişkendir.
+        const cars = ["Volvo", "Fiat", "BMW"];
+
+        //Dizi Öğelerine erişmek
+        let car = cars[0]; //Volvo'ya erişecektir.
+
+        //Dizi Öğesi değiştirme
+        cars[0] = "Opel";
+
+        cars.length // Öğe sayısını döndürür
+        cars.sort() // Diziyi sıralar.
+
+        // Son Dizi Öğesine Erişim 
+        let dizi = cars[cars.length -1];
+
+        // Döngü Dizi Elemanları
+        // Bir dizide dolaşmanın bir yolu, for düngüsü kullanmaktadır.
+        // Örnek
+        const meyveler = ["Kiraz", "Muz", "Vişne", "Armut"];
+        let uzunluk = meyveler.length;
+        Text = "<ul>";
+            for (let i =0; i<uzunluk; i++){
+                Text+= "<li>" + meyveler[i] + "</li>";
+            }
+            Text +="</ul>";
+            document.querySelector("demo").innerHTML = Text;
+
+            // Şu işlevi de kullanabilirsiniz Array.forEach():
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+            let text = "<ul>";
+            fruits.forEach(myFunction);
+            text += "</ul>";
+
+            function myFunction(value) {
+            text += "<li>" + value + "</li>";
+            }
+
+            // Dizi elemanları ekleme
+            // Bir diziye yeni bir eleman eklemenin en kolay yolu şu push()yöntemi kullanmaktır
+            meyveler.push("Limon");
+    </script>
+</body>
+</html>

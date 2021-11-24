@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Değişkenlere değerler atayın ve bunları birbirine ekleyin
+        let x = 5;
+        let y = 2;
+        let z = x + y; 
+        console.log(z); // konsola x ile y'nin toplamını yazar.
+
+
+        // Atama operatörü (=) bir değişkene bir değer atar.
+        let sayi = 10;
+        document.getElementById("demo").innerHTML = sayi;
+
+        // * operatörü ile sayıları çarparız
+        let sayi1 = 10
+        let sayi2 = 20
+        let sayitoplam = sayi1 * sayi2;
+        console.log(sayitoplam);
+
+        // Operatörler 
+        // +  -  *  ** (üst alma) /
+        // ++ (artış) 
+
+        let sayi5 = 1;
+        sayi5 += 2; // += ile rakam 3 olur
+        console.log(sayi5); 
+
+        let text1 = "What a very ";
+        text1 += "nice day";
+        console.log(text1); // text'e ekstra olarak nice day'i eklemiş olduk.
+
+        // JavaScript Karşılaştırma Operatörleri
+        // == Eşitse
+        // === Hem değeri hem de türü eşitse
+        // != Eşit değilse
+        // < küçükse
+        // <= küçük veya eşitse
+        // > büyükse
+        // >= büyük veya eşitse
+
+        // == ile === Operatörlerinin Farkı:
+        let h = 123;
+        let b = "123";
+        if (a==b) // sonuç true çünkü değerler aynı ikiside 123
+        if (a===b) // sonuç false çünkü değerler aynı ama türler farklı
+
+        // Mantıksal Operatörler
+        // Bazen kontrol edilmesi gereken birden fazla şartımız olabilir. Bu durumda aşağıdaki iki operatör kullanılır.
+
+        // *************** Ve operatörü(&&)
+        // Belirtilen şartların tümü doğru olduğunda, koşul sağlanmış sayılır. Şartlardan biri bile yanlış ise koşul sağlanmamış sayılır.
+
+        if ( x>=50 && x<=100)
+        console.log("True")
+
+        // ************** Veya Operatörü ( || )
+        // 3 sayının en az bir tanesinin pozitif olmasını istiyorsak;
+        if (a>=0 || b>=0 || c>=0);
+
+    </script>
+</body>
+</html>

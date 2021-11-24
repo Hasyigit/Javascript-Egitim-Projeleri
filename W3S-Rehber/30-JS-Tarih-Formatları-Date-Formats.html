@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <p id="demo"></p>
+<script>
+    // Javascript Date İnput - JavaScript Tarih Girişi
+    // Genellikle 3 tür JavaScript tarih giriş biçimi vardır
+    // ISO Date	"2015-03-25" (The International Standard)
+    // Short Date	"03/25/2015"
+    // Long Date	"Mar 25 2015" or "25 Mar 2015"
+
+
+    // JavaScript Get Date Methods
+    // getFullYear() = Yılı dört basamaklı bir sayı olarak alın (yyyy)
+    // getMonth() = Ayı bir sayı olarak alın (0-11)
+    // getDate() = Günü sayı olarak alın (1-31)
+    // getHours()	Get the hour (0-23)
+    // getMinutes()	Get the minute (0-59)
+    // getSeconds()	Get the second (0-59)
+    // getMilliseconds()	Get the millisecond (0-999)
+    // getTime()	Get the time (milliseconds since January 1, 1970)
+    // getDay()	 Haftanın gününü sayı olarak alın (0-6)
+    // Date.now()	Get the time. ECMAScript 5.
+
+    // Ayları Türkçe Yapma Örneği
+    const months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+    const d = new Date();
+    let month = months[d.getMonth()];
+    document.getElementById("demo").innerHTML = month;
+
+</script>
+</body>
+</html>

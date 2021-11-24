@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Hesapla" onclick="hesapla()"/>
+    <p id="demo"></p>
+    <script>
+        // HTML sayfalarında JavaScript kullanıldığında, JavaScript bu olaylara "tepki verebilir" .
+        //Örneğin bir butona tıklandığında hesapla isimli javascript fonksiyonunu çalıştırmak istiyorsak buton elementinin içine onclick parametresi şu şekilde yazılır:
+            //JavaScript'teki önemli olaylar
+            //onClick Elemana tıklanması olayıdır.
+            //onDblClick Elemana çift tıklanması olayıdır
+            //onLoad elemanın yüklenmesi olayıdır. 
+            //onFocus Bir elemanın seçilerek odaklanılması olayıdır. Örneğin bir metin kutusuna tıklandığında kontrol o kutuya geçer ve kutu aktif olur. Bir sonraki konuda bununla ilgili bir örnek bulunmaktadır.
+            //Örnek butona tıklandığında tıklandı yazdırma
+            function hesapla(){
+                document.getElementById("demo").innerHTML = "Tıklandı."
+            }
+    </script>
+</body>
+</html>

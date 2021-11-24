@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JavaScript Break and Continue
+        // Break ifadesi bir döngüden "atlar".
+        // Devam ifadesi döngüde bir yinelemenin "üzerinden atlar".
+
+
+        // The Break Statement
+        // Bu öğreticinin önceki bölümlerinde kullanılan break ifadesini zaten gördünüz. Bir switch() ifadesinin "dışarı atlamak" için kullanıldı.
+        // Break ifadesi ayrıca bir döngüden çıkmak için de kullanılabilir: 
+
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+        text += "The number is " + i + "<br>";
+        }
+
+        /* The number is 0
+        The number is 1
+        The number is 2 */ 
+
+        // Yukarıdaki örnekte, döngü sayacı (i) 3 olduğunda break ifadesi döngüyü bitirir ("döngüyü keser").
+
+
+
+        // The Continue Statement
+        // Devam ifadesi, belirtilen bir koşul oluşursa bir yinelemeyi (döngüde) keser ve döngüdeki bir sonraki yinelemeyle devam eder.
+        // Bu örnek 3 değerini atlar:
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { continue; }
+        text += "The number is " + i + "<br>";
+        }
+
+        /* The number is 0
+        The number is 1
+        The number is 2
+        The number is 4
+        The number is 5
+        The number is 6
+        The number is 7
+        The number is 8
+        The number is 9
+        */
+    </script>
+</body>
+</html>

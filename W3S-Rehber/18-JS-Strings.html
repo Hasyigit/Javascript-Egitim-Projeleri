@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="sonuc"></p>
+    <script>
+        //JavaScript strings , metni depolamak ve işlemek içindir.
+        // JavaScript dizesi, tırnak içine alınmış sıfır veya daha fazla karakterdir.
+        // let text = "John Doe";
+        //Bir dizenin uzunluğunu bulmak için yerleşik length özelliği kullanılır.
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+        // cevap 26 çıkacaktır.
+
+
+        // Replace Metodu – Metin Bulma ve Değiştirme
+        let metin = "deneme1, deneme2, deneme3";
+        let yeniMetin = metin.replace("deneme3, degistirildi")
+        document.getElementById("sonuc").innerHTML = yeniMetin;
+
+        //Metni Büyük veya Küçük Harfe Çevirme
+        yeniMetin = metin.toUpperCase();
+        console.log(yeniMetin);
+        yeniMetin = metin.toLowerCase(); 
+        console.log(yeniMetin);
+        
+        //Split Metodu – Metni Diziye Çevirme
+        // Split metodu ile istenilen metin diziye çevrilebilir. Kullanılan parametre ile metnin nasıl parçalanacağı belirtilir.
+        let metin = "Javascript"
+        let dizi = metin.split("");
+    </script>
+</body>
+</html>

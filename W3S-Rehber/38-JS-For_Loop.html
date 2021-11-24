@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <h1>Döngü için JavaScript</h1>
+    <script>
+        // Döngüler, bir kod bloğunu birkaç kez çalıştırabilir.
+        // Döngüler, her seferinde farklı bir değerle aynı kodu tekrar tekrar çalıştırmak istiyorsanız kullanışlıdır.
+        // Dizilerle çalışırken genellikle durum budur Örnek
+        text += cars[0] + "<br>";
+        text += cars[1] + "<br>";
+        text += cars[2] + "<br>";
+        text += cars[3] + "<br>";
+        text += cars[4] + "<br>";
+        text += cars[5] + "<br>";
+
+        //Böyle yazmak yerine aşağıdaki gibi yazabiliriz.
+        for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+        }
+
+        // for döngüsü aşağıdaki sözdizimine sahiptir:
+        for (statement 1; statement 2; statement 3) {
+        // code block to be executed
+        }
+
+       // Statement 1 kod bloğunun yürütülmesinden önce (bir kez) yürütülür.
+       // İfade 2, kod bloğunun yürütülmesi için koşulu tanımlar.
+       // Kod bloğu yürütüldükten sonra (her seferinde) İfade 3 yürütülür.
+
+
+        // Example
+        for (let i = 0; i<5; i++) {
+            text += "numara" + i + "<br>";
+        }
+        document.getElementById("demo1").innerHTML = text;
+    </script>
+</body>
+</html>

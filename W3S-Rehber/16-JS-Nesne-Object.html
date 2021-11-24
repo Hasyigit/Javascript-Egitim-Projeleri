@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Gerçek Hayat Nesneleri, Özellikleri ve Yöntemleri
+        Gerçek hayatta, araba bir nesnedir .
+        
+        Bir arabanın ağırlık ve renk gibi özellikleri ve çalıştırma ve 
+        durdurma gibi yöntemleri vardır
+    </h2>
+    <p id="demo"></p>
+<script>
+    // Tüm arabalar aynı özelliklere sahiptir , ancak özellik değerleri arabadan arabaya farklılık gösterir.
+    //Bu kod, car adlı bir değişkene basit bir değer (Fiat) atar :
+    // let car = "Fiat";
+    //Nesneler de değişkendir. Ancak nesneler birçok değer içerebilir.
+    const car = {type:"Fiat", model:"500"};
+
+    // Örnek
+    const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+                };
+    // Nesne Özelliklerine Erişim,
+    // Nesne özelliklerine iki şekilde erişebilirsiniz
+    // objectName.propertyName && objectName["propertyName"]
+    document.querySelector("#demo").innerHTML =  person.firstName + " " + person.lastName;  
+</script>
+
+</body>
+</html>
